@@ -1,0 +1,5 @@
+Molecule_ID,Canonical_SMILES,Trivial_names
+0,CCO,['ethanol']
+1,COC1=CC(=CC(=C1OC)OC)CCN,['mescaline']
+...
+1000,C1CN(CCC1(C2=CC=C(C=C2)Cl)O)CCCC(=O)C3=CC=C(C=C3)F,['haloperidol']
