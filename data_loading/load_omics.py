@@ -6,10 +6,11 @@ Transforms raw omics data to desired format and saves to csv file.
 def main():
     import pandas as pd
     import os
+    from cmapPy.pandasGEXpress.parse_gctx import parse
 
     # Checks working directory and reads csv file with raw omics data
     path = os.getcwd()
-    omics_df = pd.read_csv(path + '\\data\\raw_omics_data.csv')
+    omics_df = parse(path + '\\data\\example.gctx')
 
     # Gets gene names from dataframe column names (define range in square brackets)
     list_of_genes = omics_df.columns.values.tolist()[:]
